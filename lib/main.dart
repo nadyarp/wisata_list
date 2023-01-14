@@ -1,0 +1,20 @@
+import 'package:flutter/material.dart';
+import 'detail_screen.dart';
+import 'main_screen.dart';
+import 'model/tourism_place.dart';
+
+void main() => runApp(const MyApp());
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Lawang Sewu',
+      theme: ThemeData(),
+      home: const MainScreen(),
+      debugShowCheckedModeBanner: false,
+    );
+  }
+}
